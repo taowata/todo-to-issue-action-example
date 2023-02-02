@@ -3,7 +3,7 @@ name: Create TODO issues
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
