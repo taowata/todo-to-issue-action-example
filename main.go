@@ -3,13 +3,9 @@ package main
 func main() {
 }
 
-// TODO: implementation
-func todoFunc() {
-}
-
-// TODO: impl
+// TODO: impl1
 func todoFunc2() {
 }
 
-// TODO: impl
+// TODO: impl2
 func todoFunc3() {}
