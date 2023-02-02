@@ -1,5 +1,8 @@
 package main
 
-// TODO: implementation
 func main() {
+}
+
+// TODO: implement
+func todo() {
 }
