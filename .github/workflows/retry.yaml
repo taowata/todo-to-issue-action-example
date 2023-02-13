@@ -8,8 +8,5 @@ jobs:
   retry-example:
     runs-on: ubuntu-latest
     steps:
-      - name: 失敗するステップ
-        run: exit ${{ github.event.inputs.exit-code}}
-      - name: リトライ
-        if: failure()
-        run: echo "リトライ成功"
+      - name: 失敗すればリトライ
+        run: exit ${{ github.event.inputs.exit-code}} || echo "リトライ成功"
