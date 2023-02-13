@@ -1,0 +1,12 @@
+name: "Retry Example"
+on:
+  workflow_dispatch:
+jobs:
+  retry-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 失敗するステップ
+        run: exit 1
+      - name: リトライ
+        if: failure()
+        run: echo "リトライ成功"
